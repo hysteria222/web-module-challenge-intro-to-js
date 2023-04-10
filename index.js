@@ -20,6 +20,10 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18
+if (votingAge >= 18){
+  console.log('true')
+}
 
 
 /*
@@ -34,7 +38,13 @@ Do the following:
    HINT: no function required
 */
 
+let name = 'Heidi'
+let time = 'one'
+if (time === 'one'){
+ name = 'Heidi is tired'
+};
 
+console.log(name) 
 
 
 
@@ -48,7 +58,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let str= '1999'
+parseInt(str);
+console.log(str);
 
 
 
@@ -61,11 +73,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(a, b){
+  return a * b;
 }
 
-
+console.log(multiply(2,4))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,11 +89,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
-}
+function dogYears(numb){
+  return(numb * 7)
+};
 
-
+console.log(dogYears(3));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -129,10 +141,11 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(pounds, years){
+  return (pounds / years)
 }
 
+console.log(hungryDog(5,21))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -155,6 +168,20 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+
+var myGame = (Math.round(Math.random()));
+if (myGame === 0){
+  console.log('Rock')
+}
+if (myGame === 1){
+  console.log('Paper')
+}
+if (myGame === 2){
+  console.log('Scissors')
+};
+
+console.log(myGame) 
+console.log(myGame) 
 
 function game(user, computer){
   /*add your code here*/
