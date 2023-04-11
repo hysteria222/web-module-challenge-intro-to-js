@@ -141,11 +141,30 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(pounds, years){
-  return (pounds / years)
+function hungryDog(weight, age){
+  if (age >= 1 && weight <=5){
+    return weight * 0.05
+  }
+  else if (age >= 1 && weight >= 6 && weight <= 10){
+    return weight * 0.04
+  }
+  else if (age >= 1 && weight >= 11 && weight <= 15){
+  return weight * 0.03
+  }
+  else if (age >= 1 && weight > 15){
+    return weight * 0.02
+  }
+else if (age >= .166 && age <= .33){
+  return weight * .10
+}
+else if (age >= .33 && age <= .53){
+  return weight * .05 
+}
+else if (age >= .53 && age <= 1)
+return weight * .04
 }
 
-console.log(hungryDog(5,21))
+console.log(hungryDog(.56, 2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -169,24 +188,47 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-var myGame = (Math.round(Math.random()));
+let myGame = (Math.round(Math.random()*3));
 if (myGame === 0){
-  console.log('Rock')
+  console.log('rock')
 }
-if (myGame === 1){
-  console.log('Paper')
+else if (myGame === 1){
+  console.log('paper')
 }
-if (myGame === 2){
-  console.log('Scissors')
+else if (myGame === 2){
+  console.log('scissors')
 };
 
-console.log(myGame) 
-console.log(myGame) 
+
 
 function game(user, computer){
-  /*add your code here*/
-}
-
+  if (user === "rock" && computer === "paper"){
+    return("you lose!") 
+  }
+  else if (user === "paper" && computer === "scissors"){
+    return("you lose!")
+  }
+  else if (user === "rock" && computer === "scissors"){
+    return("you win!")
+  }
+  else if (user === "rock" && computer === "rock"){
+    return("it's a tie")
+  }
+  else if (user === computer){
+    return("it's a tie")
+  }
+  else if (computer === "paper" && user === "scissors"){
+    return("you win!")
+  }
+  else if (computer === "scissors" && user === "rock"){
+    return("you win!")
+  }
+  else if (computer === "rock" && user === "paper"){
+    return("you win!")
+  }
+  else
+  return("you lose!")
+};
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -200,8 +242,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return (km * 0.621371)
 }
 
 
@@ -214,10 +256,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return (cm / 30.48)
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -234,9 +275,10 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(numb){
+     return (`${5} bottles of soda on the wall, ${5} bottles of soda, take one down pass it around ${5 - 1} bottles of soda on the wall`)
 }
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
