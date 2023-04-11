@@ -296,9 +296,24 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(numb){
+if (numb <= 100 && numb >= 90){
+  return('you got an A')
 }
+else if (numb <= 89 && numb >= 80){
+  return('you got a B')
+}
+else if (numb <= 79 && numb >= 70){
+  return('you got a C')
+}
+else if (numb <= 69 && numb >= 60){
+  return('you got a D')
+}
+else 
+return('you got an F')
+}
+
+
 
 
 
